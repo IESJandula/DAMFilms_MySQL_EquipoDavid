@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "d6c8ca59-52ab-4ac0-ae8f-b1366a16be59",
+		"name": "DAMS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "38627125"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"test@estandar\",\n    \"nombreUsuario\":\"estandar\",\n    \"password\":\"MTIz\",\n    \"nombreSuscripcion\":\"Estandar\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"signup"
+					],
+					"query": [
+						{
+							"key": "password",
+							"value": "MTIz",
+							"disabled": true
+						},
+						{
+							"key": "suscripcion",
+							"value": "Estandar",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "test@estandar",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get '/'",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/"
+			},
+			"response": []
+		},
+		{
+			"name": "get '/index'",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/index"
+			},
+			"response": []
+		},
+		{
+			"name": "get '/eula'",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/eula"
+			},
+			"response": []
+		},
+		{
+			"name": "get '/home'",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/home"
+			},
+			"response": []
+		},
+		{
+			"name": "get '/catalog-documentaries'",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/catalgo-documentaries"
+			},
+			"response": []
+		},
+		{
+			"name": "get '/catalog-series'",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/catalgo-series"
+			},
+			"response": []
+		},
+		{
+			"name": "get '/catalog-movies'",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "test@estandar",
+						"password": "123"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/catalgo-movies"
+			},
+			"response": []
+		}
+	]
+}
